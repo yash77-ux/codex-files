@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d1a">
+  <meta name="description" content="A little about this corner of the web.">
+  <title>About — Hello, World!</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #090d1a; color: #f7f8ff; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+    * { box-sizing: border-box; }
+    body { min-width: 320px; min-height: 100vh; margin: 0; display: grid; place-items: center; background: radial-gradient(ellipse at 50% 110%, rgba(79,83,186,.24), transparent 50%), radial-gradient(circle at 18% 17%, rgba(61,185,192,.12), transparent 28%), #090d1a; }
+    .nav { position: fixed; z-index: 2; top: 22px; right: 24px; left: 24px; display: flex; justify-content: center; gap: 10px; }
+    .nav a { padding: 9px 14px; border: 1px solid rgba(255,255,255,.12); border-radius: 999px; color: #cbd2e8; text-decoration: none; font-size: .82rem; transition: background .2s, color .2s; }
+    .nav a:hover, .nav a[aria-current="page"] { color: white; background: rgba(255,255,255,.1); }
+    main { position: relative; width: min(100% - 32px, 720px); padding: clamp(40px, 8vw, 76px); border: 1px solid rgba(255,255,255,.1); border-radius: 28px; background: linear-gradient(145deg, rgba(255,255,255,.075), rgba(255,255,255,.025)); box-shadow: 0 30px 100px rgba(0,0,0,.25); backdrop-filter: blur(18px); }
+    .eyebrow { margin: 0 0 18px; color: #70e6df; font-size: .75rem; font-weight: 700; letter-spacing: .19em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(3rem, 9vw, 6rem); font-weight: 760; letter-spacing: -.075em; line-height: 1; background: linear-gradient(100deg, #fff 8%, #c6c4ff 52%, #78e3db 95%); background-clip: text; -webkit-background-clip: text; color: transparent; }
+    .copy { max-width: 550px; margin: 24px 0 0; color: #a7b0ca; font-size: 1.08rem; line-height: 1.8; }
+    .back { display: inline-flex; margin-top: 30px; padding: 12px 17px; border-radius: 999px; color: #101426; background: linear-gradient(110deg, #d4d0ff, #9cebe4); font-size: .9rem; font-weight: 700; text-decoration: none; transition: transform .2s; }
+    .back:hover { transform: translateY(-2px); }
+    footer { position: fixed; right: 20px; bottom: 18px; left: 20px; color: #69738e; font-size: .72rem; letter-spacing: .08em; text-align: center; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html" aria-current="page">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <p class="eyebrow">A little context</p>
+    <h1>About this<br>little corner.</h1>
+    <p class="copy">Hello, World! is a tiny welcome page built around a simple idea: the web is a great place to begin. This space is here to share a warm hello, a bit of color, and a reminder that every big idea starts somewhere.</p>
+    <p class="copy">Thanks for being here. Make yourself at home.</p>
+    <a class="back" href="index.html">← Back home</a>
+  </main>
+  <footer>MADE WITH A LITTLE CURIOSITY&nbsp; ✦</footer>
+</body>
+</html>
